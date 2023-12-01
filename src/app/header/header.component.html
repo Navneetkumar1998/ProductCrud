@@ -1,0 +1,66 @@
+<div class="navbarclass">
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+  
+      <li ngbDropdown class="nav-item" role="presentation" class="dropdown">
+        <button type="button" class="nav-link" ngbDropdownToggle >Mobiles</button>
+      
+        <div ngbDropdownMenu class="dropdown-menu">
+          <button ngbDropdownItem>Samsung</button>
+          <button ngbDropdownItem>Realme</button>
+          <button ngbDropdownItem>Motorola</button>
+          <button ngbDropdownItem>Redmi</button>
+        </div>
+      </li>
+    
+      <li ngbDropdown class="nav-item" role="presentation">
+        <button type="button" class="nav-link" ngbDropdownToggle>Fashion</button>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem  value="Bluetooth"> Men's T-Shirts</button>
+          <button ngbDropdownItem>Men's Casual Shirts</button>
+          <button ngbDropdownItem>Men's kurtas</button>
+          <button ngbDropdownItem>Men's Kurtas</button>
+        </div>
+      </li>
+    
+    
+      <li ngbDropdown class="nav-item" role="presentation">
+        <button type="button" class="nav-link" ngbDropdownToggle>Electronics</button>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem value="Bluetooth">Bluetooth Headphones</button>
+          <button ngbDropdownItem>Wired Headphones</button>
+          <button ngbDropdownItem>Bluetooth Speakers</button>
+          <button ngbDropdownItem>Wired Earbuds</button>
+          <button ngbDropdownItem>Soundbars</button>
+        </div>
+      </li>
+    
+    
+      <li ngbDropdown class="nav-item" role="presentation">
+        <button type="button" class="nav-link" ngbDropdownToggle>Home & Furniture</button>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem>Badsheets</button>
+          <button ngbDropdownItem>Blankets</button>
+          <button ngbDropdownItem>Curtains & Accessories</button>
+          <button ngbDropdownItem>Bath linen</button>
+          <button ngbDropdownItem>Floor coverings</button>
+        </div>
+      </li>
+      <li class="logoutcont">
+  
+        <button class="logoutbtn nav-link"    (click)="onLogout()">logout</button>
+    
+      </li>
+    
+    
+      
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
+  
+    
+  </div>
+
+ 
+
+  <button class="buttonadd"  (click)="onClick($event)"  *ngFor="let item of input1" value="{{item}}">{{item}}</button>
+
+

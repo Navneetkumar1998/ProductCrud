@@ -1,54 +1,95 @@
-<!-- <div class="addContainer">
-    <table class="addtable">
-        <caption>
-          Add Product
-        </caption>
-        <thead>
-          <tr>
-                <th >Name</th>
-                <input type="text" placeholder="name" > 
-          </tr>
-          
-        </thead>
-        <tbody>
-          <tr>
-            <th> 
-                Details
-            </th>
-            <input type="text" placeholder="details" >   
-          </tr>
-          <tr>
-            <th> 
-                Price
-            </th>
-            <input type="text" placeholder="price" > 
-          </tr>
-          <tr>
-            <th> 
-                Discount
-            </th>
-            <input type="text" placeholder="discount" > 
-            
-          </tr>
-        </tbody>
-      </table>
+
+<!-- <div class="navbarclass">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+
+    <li ngbDropdown class="nav-item" role="presentation" class="dropdown">
+      <button type="button" class="nav-link" ngbDropdownToggle >Mobiles</button>
+    
+      <div ngbDropdownMenu class="dropdown-menu">
+        <button ngbDropdownItem>Samsung</button>
+        <button ngbDropdownItem>Realme</button>
+        <button ngbDropdownItem>Motorola</button>
+        <button ngbDropdownItem>Redmi</button>
+      </div>
+    </li>
+  
+    <li ngbDropdown class="nav-item" role="presentation">
+      <button type="button" class="nav-link" ngbDropdownToggle>Fashion</button>
+      <div ngbDropdownMenu>
+        <button ngbDropdownItem>Men's T-Shirts</button>
+        <button ngbDropdownItem>Men's Casual Shirts</button>
+        <button ngbDropdownItem>Men's kurtas</button>
+        <button ngbDropdownItem>Men's Kurtas</button>
+      </div>
+    </li>
+  
+  
+    <li ngbDropdown class="nav-item" role="presentation">
+      <button type="button" class="nav-link" ngbDropdownToggle>Electronics</button>
+      <div ngbDropdownMenu>
+        <button ngbDropdownItem>Bluetooth Headphones</button>
+        <button ngbDropdownItem>Wired Headphones</button>
+        <button ngbDropdownItem>Bluetooth Speakers</button>
+        <button ngbDropdownItem>Wired Earbuds</button>
+        <button ngbDropdownItem>Soundbars</button>
+      </div>
+    </li>
+  
+  
+    <li ngbDropdown class="nav-item" role="presentation">
+      <button type="button" class="nav-link" ngbDropdownToggle>Home & Furniture</button>
+      <div ngbDropdownMenu>
+        <button ngbDropdownItem>Badsheets</button>
+        <button ngbDropdownItem>Blankets</button>
+        <button ngbDropdownItem>Curtains & Accessories</button>
+        <button ngbDropdownItem>Bath linen</button>
+        <button ngbDropdownItem>Floor coverings</button>
+      </div>
+    </li>
+    <li class="logoutcont">
+
+      <button class="logoutbtn nav-link"    (click)="onLogout()">logout</button>
+  
+    </li>
+  
+  
+    
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+
+  
 </div> -->
 
-<div>
-    <button class="addbutton" type="button" [disabled]="clicked" (click)="create(content)">Add Product</button>
-</div>
+<button  class="menu-list"   (click)="menulist()">menu-list</button>
 
-<div>
-  <button (click)="onLogout()">logout</button>
-</div>
+ 
 
-<div>
-  <h2>Product List</h2>
-  <form [formGroup]="productForm">
-    <table class="getTable">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav >
+  <div>
+    <button class="addbuttonClass" type="button" [disabled]="clicked" (click)="create(content)">Add Product</button>
+</div>
+</nav>
+
+
+<div class="divTable">
+  <h2 class="prodListClass">Product List</h2>
+    <table class="tableClass">
       <thead>
-        <tr>
-          <th>Sr.No</th>
+        <tr class="headerClass">
+          <th>Id</th>
           <th>Name</th>
           <th>Details</th>
           <th>Price</th>
@@ -58,19 +99,19 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let product of productList;let i = index">
+        <tr   class="detailsClass"     *ngFor="let product of productList; let i=index">
           <td>{{i+1}}</td>
           <td>{{ product.name }}</td>
           <td>{{ product.details }}</td>
           <td>{{ product.price }}</td>
           <td>{{ product.discount }}</td>
           <td><button class="btn btn-warning" (click)="edit(content,product)">Edit</button>&nbsp;
-            <button class="btn btn-danger" (click)="deleteProduct(product)">Delete</button>
+            <button class="btn btn-danger" (click)="deleteProduct(product.id)">Delete</button>
         </td>
         </tr>
       </tbody>
     </table>
-  </form>
+  
 </div>
 
 
@@ -135,7 +176,8 @@
       </div>
     
 </ng-template>
-   
+
+
     
    
 

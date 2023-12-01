@@ -1,0 +1,105 @@
+<!-- <div class="sidebar">
+    <div  class="sidebarbtn">
+            <div class="first">
+                <button (click)="onClick($event)"   value="first btn" >first btn</button>
+                <h6>{{inputbtn}}</h6>
+            </div>
+            <br>
+    
+            <div class="second" >
+                <button  (click)="onClick($event)" value="second btn">second btn</button>
+                <h6>{{inputbtn}}</h6>
+            </div>
+            <br>
+    
+            <div class="third">
+                <button>third btn</button>
+            </div>
+            <br>
+        
+            <div class="fourth">
+                <button >fourth btn</button>
+            </div>
+            <br>
+       
+            <div class="fifth">
+                <button>fifth btn</button>
+            </div>
+            <br>
+      
+            <div class="sixth">
+                <button>fifth</button>
+            </div>
+            <br>  
+    </div>
+</div> -->
+
+
+
+
+
+<!-- <div class="button-container">
+      <button (click)="onClick('first btn')" >first btn</button>
+      <h6>{{ inputbtn === 'first btn' ? inputbtn : '' }}</h6>
+    </div>
+
+    <div class="button-container">
+      <button (click)="onClick('second btn')">second btn</button>
+      <h6>{{ inputbtn === 'second btn' ? inputbtn : '' }}</h6>
+    </div>
+
+    <div class="button-container">
+      <button (click)="onClick('third btn')" >third btn</button>
+      <h6>{{ inputbtn === 'third btn' ? inputbtn : '' }}</h6>
+    </div>
+
+    <div class="button-container">
+      <button (click)="onClick('fourth btn')" >fourth btn</button>
+      <h6>{{ inputbtn === 'fourth btn' ? inputbtn : '' }}</h6>
+    </div>
+
+    <div class="button-container">
+      <button (click)="onClick('fifth btn')" >fifth btn</button>
+      <h6>{{ inputbtn === 'fifth btn' ? inputbtn : '' }}</h6>
+    </div>
+
+    <div class="button-container">
+      <button (click)="onClick('sixth btn')" >sixth btn</button>
+      <h6>{{ inputbtn === 'sixth btn' ? inputbtn : '' }}</h6>
+    </div> -->
+
+
+
+
+
+
+
+
+<!-- <div class="sidebar">
+  <div class="sidebarbtn">
+      <h6> ETL EDITOR</h6>
+    <hr>
+
+    <div class="btndiv" >
+   <button   (click)='onClick($event)' *ngFor="let item of buttonList" value="{{item}}">-{{item}}</button>
+   <h6>{{inputbtn}}</h6>
+    </div>
+
+  </div>
+</div> -->
+
+
+
+<div class="sidebar">
+  <h4>Side Bar</h4>
+  <hr>
+    <div class="sidebarbtn">
+      <button (click)='itemClick($event)' *ngFor="let item of buttonlist" value="{{item}}">-{{item}}</button>
+    </div>
+    <h1>{{inputbtn}}</h1>
+  </div>
+
+
+
+
+

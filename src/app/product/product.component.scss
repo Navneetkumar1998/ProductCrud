@@ -1,23 +1,158 @@
-.addContainer{
-    flex: content;
-    border: 1px;
-    background-color: aqua;
-    width: 300px;
-    
+// nav{
+//     background-color:rgb(150, 146, 142);
+//     width: auto;
+//     height: 70px;
+// }
+
+// .navbarclass{
    
+// }
+
+
+
+.logoutclass{
+    margin-left: 650px;
+    margin-top: 30px;
 }
 
-table{
+
+.logoutbtn{
+    // margin-top: 0px;
+    margin-left: 950px;
+    // margin-bottom: 20px;
+    // background-color: lightskyblue;
+    // border: none;
+    // border-radius: 20px;
+    // width: auto;
+    // height: 25px;
+   
+    
+}
+
+.addbuttonClass{
+    margin-top: 10px;
+    margin-left: 1150px;
+    background-color: lightskyblue;
+    border-radius: 25px;
+    height: 30px;
+    border: none;
+}
+
+.prodListClass{
+    margin-left: 5px;
+}
+
+
+.divTable{
     text-align: center;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+table,th,td{
+    text-align: center;
+    border: 1px;
+    border: solid;
+    
 }
 
 .addbutton{
     margin-left: 90%;
-    background-color:rgb(3, 92, 98);
+    background-color:rgb(140, 175, 88);
 }
 
-.getTable{
+.tableClass{
     border: 2px solid;
     width: 1000px;
     height: auto;
 }
+
+.btn-danger{
+   display: inline;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+  
+}
+
+.btn-warning{
+    display: inline;
+    background-color: rgb(44, 36, 100);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.headerClass{
+    background-color: rgb(129, 84, 129);
+}
+
+.detailsClass{
+    background-color: bisque;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content:unset;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+// .ngbDropdown:hover .ngbDropdownMenu{
+//   display: block;
+// }
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+// .logoutcont{
+   
+
+// }
+
+.nav-tabs{
+    font-size: 12px;
+}
+
+button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    display: block;
+    padding: 3px;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: unset;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.sublist{
+    display: inline;
+}
+
+.divsublist{
+    display: inline;
+}
+
+
+.menu-list{
+    margin-top: 10px;
+    margin-left: 1150px;
+}
+
+
+
+
+

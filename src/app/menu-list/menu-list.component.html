@@ -1,0 +1,60 @@
+
+
+<!-- <h1>ProdList</h1> -->
+<!-- <ul>  
+    <li *ngFor="let item of  menuproductlist">{{item}}</li>
+</ul> -->
+
+
+<!-- <div class="lm-Widget p-Widget lm-Panel p-Panel">
+    <ul ngbNav #nav="ngbNav"  class="nav-tabs">
+     
+      <li id="menu-products">
+        <div ngbDropdown  class="d-inline-block dropdown" role="presentation">
+            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+             Products 
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" id="dropdown-menu" >
+                <button class="buttonadd"  (click)="onClick($event)"  *ngFor="let item of menuproductlist" value="{{item}}">{{item}}</button>
+                <h6 class="clickeditem">{{clickeditem}}</h6>
+            </div>
+          </div>
+    </li>
+   </ul>
+ </div>
+
+
+
+
+<div class="additembtn">
+    <div>Add Items to List</div>
+    <div>
+        <input  type="text" [(ngModel)]='input' placeholder="add item">
+        <button  (click)="additem()">Add new item</button>
+
+    </div>
+</div>  -->
+
+
+  
+
+
+  
+    
+
+    
+     <div class="leftrightdiv">
+      <div style="display: flex; flex-grow: grow">
+        <app-sidebar class="appsidebar"></app-sidebar>
+        <app-editor   class="appeditor"  (saveBtnEvent)="saveBtn($event)"></app-editor>
+      </div>
+    
+    
+    <div class="saveclearbutton">
+        <button  class="save" (click)="showData()" >Save</button>
+        <button   class="clear" (click)="clrBtn()">Clear</button>
+    </div>
+     </div>
+   
+
+ 
